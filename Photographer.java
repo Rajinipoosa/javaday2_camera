@@ -14,5 +14,13 @@ public int removeCamera(Printable camera){
   cameras.remove(camera);
   return cameras.size();
 }
+public String cameraDetails(){
+  String details = "";
+  for(Printable camera : this.cameras){
+   details = details +""+ camera.printDetails()  ;
+  }
+  return details;
+}
 
+  
 }

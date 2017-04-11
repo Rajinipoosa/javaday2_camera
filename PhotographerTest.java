@@ -30,7 +30,9 @@ import org.junit.*;
    }
    @Test
    public void displayAllCameraDetails(){
-    
+    photographer.addCamera(analog);
+
+    assertEquals("Sony ILCE5100L, No noise reduciton, Lo-resolution",photographer.cameraDetails());
 
    }
 }
